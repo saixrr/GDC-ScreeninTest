@@ -1,9 +1,11 @@
 const fs = require("fs");
-const path = require("path");
-const { INTEGER } = require("sequelize");
+// const path = require("path");
+// const { INTEGER } = require("sequelize");
 
-const taskFilePath = path.join(process.cwd(), "task.txt");
-const completedFilePath = path.join(process.cwd(), "completed.txt");
+// const taskFilePath = path.join(process.cwd(), "task.txt");
+const taskFilePath = `${__dirname}/task.txt`
+// const completedFilePath = path.join(process.cwd(), "completed.txt");
+const completedFilePath = `${__dirname}/completed.txt`
 
 
 function getFileData(callback) {
